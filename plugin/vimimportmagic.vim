@@ -28,4 +28,4 @@ if !exists('g:vim_importmagic_config')
 endif
 
 " register command
-command! ImportMagic exec("Python vimimportmagic.magic()")
+command! -bang ImportMagic exec("Python vimimportmagic.magic('<bang>')")

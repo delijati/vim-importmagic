@@ -10,6 +10,8 @@ Usage
 To import not imported modules call ``:ImportMagic`` command. It will add
 imports to the current python file.
 
+To refresh the SearchIndex call ``:ImportMagic!``.
+
 
 Installation
 ============
