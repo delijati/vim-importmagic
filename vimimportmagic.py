@@ -9,9 +9,6 @@ except ImportError:
     imported = False
 
 
-py2 = sys.version_info[0] == 2
-
-
 def magic(refresh=None):
     if not imported:
         print("No importmagic. Run 'pip install importmagic'")
