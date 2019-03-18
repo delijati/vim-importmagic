@@ -9,7 +9,6 @@ endif
 
 " init load script parent path :h:h
 execute "Python import sys"
-execute "Python print('Plugin: " . expand("<sfile>:p:h:h") . "')"
 execute "Python sys.path.append(r'" . expand("<sfile>:p:h:h") . "')"
 
 Python << EOF
