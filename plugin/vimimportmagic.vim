@@ -13,14 +13,12 @@ execute "Python print('Plugin: " . expand("<sfile>:p:h:h") . "')"
 execute "Python sys.path.append(r'" . expand("<sfile>:p:h:h") . "')"
 
 Python << EOF
-print("excecuted")
 if 'vimimportmagic' not in sys.modules:
     import vimimportmagic
 else:
     import imp
     # Reload python module to avoid errors when updating plugin
     vimimportmagic = imp.reload(vimimportmagic)
-print(vimimportmagic.__file__)
 EOF
 
 if !exists('g:vim_importmagic_config')
