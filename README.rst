@@ -28,4 +28,4 @@ If using `vim-plug <https://github.com/junegunn/vim-plug>`_ add the following to
 
 .. code::
 
-    Plug 'delijati/vim-imports'
+    Plug 'delijati/vim-importmagic'
